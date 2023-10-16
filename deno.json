@@ -1,0 +1,18 @@
+{
+    "fmt": {
+        "useTabs": false,
+        "indentWidth": 4,
+        "semiColons": true,
+        "singleQuote": true
+    },
+    "test": {
+        "include": ["src/__tests__/**/*.ts"]
+    },
+    "imports": {
+        "@std/": "https://deno.land/std@0.204.0/",
+        "@x/": "https://deno.land/x/",
+        "@toml": "https://deno.land/std@0.204.0/toml/mod.ts",
+        "@log": "https://deno.land/std@0.204.0/log/mod.ts",
+        "@arango": "https://deno.land/x/darango@0.1.6/mod.ts"
+    }
+}
