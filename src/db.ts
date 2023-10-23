@@ -1,6 +1,6 @@
 import config from './config.ts';
 import logger from './log.ts';
-import { Arango } from '@arango';
+import { Arango, Collection } from '@arango';
 
 const db: Arango = await (async () => {
     if (

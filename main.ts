@@ -1,19 +1,15 @@
-import config from './src/config.ts';
-import { Entity } from './src/entity.ts';
+import { sleep } from './src/timer.ts';
 import { World } from './src/world.ts';
+import { close as authClose } from './src/auth.ts';
+import logger from './src/log.ts';
 
-class TestEnt implements Entity {
-    public uuid = '';
-    public tick(delta: number): void {
-        console.log('Test Tick', delta, 'ms');
-    }
-}
+const world = new World(60);
+logger.info('World created.');
 
-const world = new World(144);
-
-const test = world.register(new TestEnt());
-
-Deno.addSignalListener('SIGINT', () => {
-    console.log('Shutting down...');
+Deno.addSignalListener('SIGINT', async () => {
+    logger.info('Shutting down...');
     world.shutdown();
+    authClose();
+    logger.info('Shutdown complete. Goodbye!');
+    await sleep(2500);
 });

@@ -16,3 +16,13 @@ export class Timer {
         clearInterval(this._interval);
     }
 }
+
+export async function sleep(duration: number): Promise<void> {
+    return await new Promise((resolve, reject) => {
+        try {
+            setTimeout(resolve, duration);
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
