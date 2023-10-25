@@ -159,8 +159,13 @@
     "https://deno.land/x/darango@0.1.6/edge.ts": "a4b8caa0bdcd8f9895cf21a74ae569a16845cbd89c0852804a1999c156d56fc2",
     "https://deno.land/x/darango@0.1.6/graph.ts": "6e03ec8213a3ef7a9c8f9187ed3a146da9c4ca9166d8aa7f0264a78cbf505d74",
     "https://deno.land/x/darango@0.1.6/mod.ts": "3c6e93e5305d4e0c17e3137ccc0c18933b885e6a4d60e7660db366f95b9b0522",
+    "https://deno.land/x/ee_ts@1.0.0/mod.ts": "e0b0490a12697f4524795766383460938c507eb9ab36b79efc790f272905cc0c",
+    "https://deno.land/x/ee_ts@1.0.0/src/types.ts": "3929a3f45453964deea94245f2ede764f40471003dadfed6a10f1b8e8b749eec",
     "https://deno.land/x/plugin_prepare@v0.8.0/deps.ts": "8d1f49743d451ebd584ca2e49bb6e0491fd89312a62ad79ea939c6edc1409bd0",
     "https://deno.land/x/plugin_prepare@v0.8.0/mod.ts": "fc7cb446b228311c3a1f093423a22b98cf2ca3b367841e5fc5119ff0c2350d0c",
-    "https://deno.land/x/url_join@1.0.0/mod.ts": "d3c7007e3ab15594e54d5b90dce623b3e274a726e0cdf57858e7ecab77a0166c"
+    "https://deno.land/x/url_join@1.0.0/mod.ts": "d3c7007e3ab15594e54d5b90dce623b3e274a726e0cdf57858e7ecab77a0166c",
+    "https://raw.githubusercontent.com/envis10n/denows/main/mod.ts": "58feaa771947b36fc2cbac499af34c289031031015e014abe1510c9aa868511e",
+    "https://raw.githubusercontent.com/envis10n/denows/main/src/client.ts": "65bb9738346f71ba3e78f639e2bb257d783ebc3b02627cfeb9f8b1f5266cdaef",
+    "https://raw.githubusercontent.com/envis10n/denows/main/src/server.ts": "bf2d7e9e7f1cab131bd8b1e00decefc53cbc4352785d458cff9aed091ecf162d"
   }
 }

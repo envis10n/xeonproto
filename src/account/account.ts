@@ -1,7 +1,7 @@
 import { Collection, Document } from 'https://deno.land/x/darango@0.1.6/mod.ts';
-import db from './db.ts';
-import { Option } from './shared/helpers.ts';
-import { hash as genHash, verify } from './auth.ts';
+import db from '../network/db.ts';
+import { Option } from '../shared/helpers.ts';
+import { hash as genHash, verify } from '../account/auth.ts';
 
 export interface Account {
     username: string;

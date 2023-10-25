@@ -16,6 +16,10 @@ export interface XEONConfig {
     logging: {
         level?: _log.LevelName;
     };
+    ws: {
+        host: string;
+        port: number;
+    };
 }
 
 const _default_conf: string = toml.stringify({
@@ -30,6 +34,10 @@ const _default_conf: string = toml.stringify({
     },
     logging: {
         level: 'DEBUG',
+    },
+    ws: {
+        host: '127.0.0.1',
+        port: 3000,
     },
 });
 

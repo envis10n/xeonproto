@@ -14,6 +14,7 @@
         "@toml": "https://deno.land/std@0.204.0/toml/mod.ts",
         "@log": "https://deno.land/std@0.204.0/log/mod.ts",
         "@arango": "https://deno.land/x/darango@0.1.6/mod.ts",
-        "@argon2": "https://deno.land/x/argon2ian@2.0.1/src/async.ts"
+        "@argon2": "https://deno.land/x/argon2ian@2.0.1/src/async.ts",
+        "@ws": "https://raw.githubusercontent.com/envis10n/denows/main/mod.ts"
     }
 }
