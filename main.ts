@@ -1,10 +1,9 @@
 import { sleep } from './src/timer.ts';
-import { World } from './src/world.ts';
+import world from './src/world.ts';
 import { close as authClose } from './src/account/auth.ts';
 import server from './src/network/ws.ts';
 import logger from './src/log.ts';
 
-const world = new World(60);
 logger.info('World created.');
 
 server.listen();

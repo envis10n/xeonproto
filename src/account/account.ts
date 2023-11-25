@@ -1,5 +1,5 @@
 import { Collection, Document } from 'https://deno.land/x/darango@0.1.6/mod.ts';
-import db from '../network/db.ts';
+import db, { ensureCollection } from '../network/db.ts';
 import { Option } from '../shared/helpers.ts';
 import { hash as genHash, verify } from '../account/auth.ts';
 
@@ -16,7 +16,7 @@ let _accounts: Option<Collection<Account>> = null;
 
 export async function accounts(): Promise<Collection<Account>> {
     if (_accounts == null) {
-        _accounts = await db.collection('accounts');
+        _accounts = await ensureCollection('accounts');
     }
     return _accounts;
 }

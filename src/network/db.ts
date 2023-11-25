@@ -2,6 +2,8 @@ import config from '../config.ts';
 import logger from '../log.ts';
 import { Arango, Collection } from '@arango';
 
+export const kv = await Deno.openKv(config.deno.kv);
+
 const db: Arango = await (async () => {
     if (
         config.arango.token == undefined
@@ -28,5 +30,15 @@ const db: Arango = await (async () => {
         });
     }
 })();
+
+export async function ensureCollection<T>(
+    name: string,
+): Promise<Collection<T>> {
+    try {
+        return await db.collection(name);
+    } catch (_) {
+        return await db.createCollection(name);
+    }
+}
 
 export default db;

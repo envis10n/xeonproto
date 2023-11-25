@@ -166,6 +166,6 @@
     "https://deno.land/x/url_join@1.0.0/mod.ts": "d3c7007e3ab15594e54d5b90dce623b3e274a726e0cdf57858e7ecab77a0166c",
     "https://raw.githubusercontent.com/envis10n/denows/main/mod.ts": "58feaa771947b36fc2cbac499af34c289031031015e014abe1510c9aa868511e",
     "https://raw.githubusercontent.com/envis10n/denows/main/src/client.ts": "65bb9738346f71ba3e78f639e2bb257d783ebc3b02627cfeb9f8b1f5266cdaef",
-    "https://raw.githubusercontent.com/envis10n/denows/main/src/server.ts": "bf2d7e9e7f1cab131bd8b1e00decefc53cbc4352785d458cff9aed091ecf162d"
+    "https://raw.githubusercontent.com/envis10n/denows/main/src/server.ts": "17030a479142111ad4ef64aeaec4872f27c855a7f7c64929ab3c608a05033f57"
   }
 }
